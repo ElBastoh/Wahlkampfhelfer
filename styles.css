@@ -88,9 +88,64 @@ header {
         padding: 10px;
     }
 }
-/* ... Weitere CSS-Regeln ... */
 
+/* Slide-Out-Menü-Stile */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
 
+.slide-out-menu {
+    width: 200px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: -200px;
+    transition: left 0.3s ease-in-out;
+}
+
+.slide-out-menu ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.slide-out-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.menu-open {
+    left: 0;
+}
+
+/* Zentriert den Header-Text */
+header {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Geändert zu 'center' */
+    width: calc(100% - 200px); /* Abzug der Breite der Sidebar */
+}
+
+/* Zentriert den Hauptinhaltstext */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center; /* Hinzugefügt */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Hinzugefügt */
 
 /* ... Weitere CSS-Regeln ... */
 
