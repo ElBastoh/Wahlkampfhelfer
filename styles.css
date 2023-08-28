@@ -65,5 +65,32 @@ header {
     display: block;
 }
 
+/* Stile für mobile Ansicht */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        text-align: left;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-title {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
+/* ... Weitere CSS-Regeln ... */
+
+
+
 /* ... Weitere CSS-Regeln ... */
 
