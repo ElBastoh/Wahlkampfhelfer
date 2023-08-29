@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
     const questionBtns = document.querySelectorAll(".question-btn");
-    const menuToggle = document.querySelector(".menu-toggle");
-    const slideOutMenu = document.querySelector(".slide-out-menu");
 
     questionBtns.forEach(function(btn) {
         btn.addEventListener("click", function() {
@@ -9,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
             answer.classList.toggle("show-answer");
         });
     });
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const slideOutMenu = document.querySelector(".slide-out-menu");
 
     menuToggle.addEventListener("click", function() {
         slideOutMenu.classList.toggle("menu-open");
