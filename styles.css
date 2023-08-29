@@ -32,8 +32,8 @@ header {
 .slide-out-menu {
     position: fixed;
     top: 0;
-    left: -80%; /* Verwendung von Prozent für die Position */
-    width: 80%; /* Verwendung von Prozent für die Breite */
+    left: -100%; /* Verwendung von Prozent für die Position */
+    width: 250px; /* Verwendung von Prozent für die Breite */
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
@@ -90,26 +90,30 @@ footer {
 }
 
 /* Akkordeon-Stile für FAQ */
+/* Akkordeon-Stile für FAQ */
 .faq-item {
-    margin-bottom: 5%; /* Verwendung von Prozent für den Abstand */
+    margin-bottom: 20px;
 }
 
 .question-btn {
-    background-color: transparent;
+    background-color: rgb(0, 100, 100); /* Neue Hintergrundfarbe für Frage-Schaltflächen */
     border: none;
     color: white;
     cursor: pointer;
     width: 100%;
     text-align: left;
+    font-size: 18px;
+    padding: 10px; /* Leichtes Padding hinzugefügt */
 }
 
 .answer {
     display: none;
-    margin-top: 2% /* Verwendung von Prozent für den Abstand */;
+    margin-top: 10px;
 }
 
 .show-answer {
     display: block;
 }
 
-/* ... Weitere Stile ... */
+
+
