@@ -12,19 +12,22 @@ body {
 /* Header-Stile */
 header {
     background-color: transparent;
-    padding: 2% 5%; /* Verwendung von Prozent für den Abstand */
+    padding: 2% 5%;
     text-align: center;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    width: calc(100% - 20%); /* Verwendung von Prozent für die Breite */
+}
+
+.logo img {
+    max-height: 40px; /* Die maximale Höhe des Logos */
 }
 
 .menu-toggle {
     background: none;
     border: none;
     color: white;
-    font-size: 1.5rem; /* Verwendung von relativen Einheiten REM */
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
