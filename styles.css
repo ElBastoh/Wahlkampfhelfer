@@ -19,8 +19,14 @@ header {
     justify-content: space-between;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    max-height: 40px; /* Die maximale Höhe des Logos */
+    max-height: 40px;
+    margin-right: 10px; /* Platz zwischen Logo und Text */
 }
 
 .menu-toggle {
@@ -30,7 +36,6 @@ header {
     font-size: 1.5rem;
     cursor: pointer;
 }
-
 /* Slide-Out-Menü-Stile */
 .slide-out-menu {
     position: fixed;
@@ -117,6 +122,5 @@ footer {
 .show-answer {
     display: block;
 }
-
 
 
