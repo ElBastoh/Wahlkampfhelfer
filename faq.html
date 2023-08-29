@@ -3,91 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Wahlkampftool</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>FAQ - Partei MUT</title>
 </head>
 <body>
-    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
-    <nav class="slide-out-menu">
-        <ul>
-            <li><a href="index.html">Startseite</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="gespraechsleitfaden.html">Gesprächsleitfaden</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1 class="main-title">Häufig gestellte Fragen</h1>
-        <p>Hier sind einige häufig gestellte Fragen und ihre Antworten:</p>
-        <div class="faq-accordion">
-            <div class="faq-item">
-                <button class="question-btn">Wie lange gibt es euch schon?</button>
-                <div class="answer">
-                    <p>Wir wurden am 13. Februar 1993 in Bonn als weltweit erste Tierschutzpartei gegründet.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="question-btn">Wofür steht ihr?</button>
-                <div class="answer">
-                    <p>-Menschenrecht</p> 
-                    <p>-soziale Gerechtigkeit</p> 
-                    <p>-Tierschutz</p>
-                    <p>-Tierrechte</p> 
-                    <p>-Umwelt- und Klimaschutz</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="question-btn">Was sind eure Ziele?</button>
-                <div class="answer">
-                    <p>-Einführung grundlegender Rechte für Tiere im Grundgesetz</p>
-                    <p>-Abschaffung von Massentierhaltung und Tierversuchen</p>
-                    <p>-Förderung pflanzlicher Ernährung</p>
-                    <p>-Umstieg auf Bio-Vegane Landwirtschaft</p>
-                    <p>-deutlich schnellerer Umstieg auf 100% Erneuerbare Energien als bisher geplant</p>
-                    <p>-mehr ÖPNV statt Individualverkehr</p>
-                    <p>-bezahlbare Wohnungen für alle</p>
-                    <p>-Menschliche Asylpolitik</p>
-                    <p>-vollständige Gleichstellung aller Menschen unabhängig von sexueller Orientierung oder geschlechtlicher Identität</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="question-btn">Wieviele Mitglieder seid ihr?</button>
-                <div class="answer">
-                    <p>ca. 2400 Bundesweit</p>                    
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="question-btn">Was unterscheidet euch von anderen Parteien?</button>
-                <div class="answer">
-                    <p>-Handeln aus voller Überzeugung</p>
-                    <p>-Erste Partei die sich konsequent für Mensch, Tiere und Umwelt einsetzt</p>                       
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="question-btn">Welchen großen Parteien steht ihr am nächsten?</button>    
-                <div class="answer">
-                    <p>-Die Grünen</p>
-                    <p>-Die Linke</p>
-                    <p>Allerdings ist es ja leider mittlerweile bekannt, dass diese beiden Parteien in aller Regel wenig von ihrer (und noch weniger von unserer) Programmatik umsetzen.</p>                       
-                </div>            
-            </div>
-            <div class="faq-item">
-                <button class="question-btn">Warum sollte ich euch wählen und nicht die Grünen?</button>    
-                <div class="answer">
-                    <p>-Fokus auf Tierschutz</p>
-                    <p>-Unabhängigkeit von etablierten politischen Strukturen</p>
-                    <p>-Klare Positionen zu Massentierhaltung, Tierversuchen und Pelzindustrie</p>
-                    <p>-Kleine Parteien unterstützen um politische Vielfalt zu erhalten</p> 
-                    <P>-Starke Relevanz in einigen Kommunen</P>
-                    <p>-Versteht den zusammenhang zwischen Tierschutz, Umweltschutz und Menschenrechten</p>
-                    <p>-Möglichkeit zur Protestwahl</p>                      
-                </div>
+    <header>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="gespraechsleitfaden.html">Gesprächsleitfaden</a></li>
+            </ul>
+        </nav>
+        <h1>Häufig gestellte Fragen</h1>
+    </header>
+    <main>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h2 class="accordion-title">Wie lange gibt es euch schon?</h2>
+                <div class="accordion-icon"></div>
+            </div>
+            <div class="accordion-content">
+                <p>Wir wurden am 13 Februar 1993 in Bonn gegründet</p>
+            </div>
+        </div>
+        <!-- Weitere Fragen und Antworten können hier eingefügt werden -->
     </main>
-    <footer>
-        <!-- Hier kann der Footer-Inhalt stehen -->
-    </footer>
-    <p class="footer-text">&copy; 2023 Wahlkampf-Tool</p>
     <script src="script.js"></script>
 </body>
 </html>
