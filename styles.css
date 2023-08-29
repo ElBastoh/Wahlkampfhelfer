@@ -1,23 +1,58 @@
+/* Globale Stile */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom right, rgb(9, 122, 138), rgb(0, 58, 66));
+    background-color: rgb(6, 171, 170); /* Neue Hintergrundfarbe */
     color: white;
     display: flex;
     min-height: 100vh;
 }
 
-.sidebar {
+/* Header-Stile */
+header {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Änderung der Ausrichtung */
+    width: calc(100% - 200px); /* Abzug der Breite der Sidebar */
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Slide-Out-Menü-Stile */
+.slide-out-menu {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+    justify-content: center;
+    transition: left 0.3s ease-in-out;
 }
 
-.sidebar a {
+.slide-out-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.slide-out-menu ul li {
+    margin-bottom: 20px;
+}
+
+.slide-out-menu a {
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -25,14 +60,25 @@ body {
     text-align: center;
 }
 
-header {
-    background-color: transparent;
+.menu-open {
+    left: 0;
+}
+
+/* Hauptinhalt-Stile */
+main {
+    flex: 1;
     padding: 20px;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: calc(100% - 200px); /* Abzug der Breite der Sidebar */
+}
+
+/* Footer-Stile */
+footer {
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
 }
 
 .footer-text {
@@ -40,9 +86,10 @@ header {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    margin-top: auto; /* Platziert den Text am unteren Rand */
+    margin-top: auto;
 }
 
+/* Akkordeon-Stile für FAQ */
 .faq-item {
     margin-bottom: 20px;
 }
@@ -65,87 +112,4 @@ header {
     display: block;
 }
 
-/* Stile für mobile Ansicht */
-@media (max-width: 768px) {
-    header {
-        padding: 10px;
-        text-align: left;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .main-title {
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    footer {
-        text-align: center;
-        padding: 10px;
-    }
-}
-
-/* Slide-Out-Menü-Stile */
-.menu-toggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-}
-
-.slide-out-menu {
-    width: 200px;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    top: 0;
-    left: -200px;
-    transition: left 0.3s ease-in-out;
-}
-
-.slide-out-menu ul {
-    list-style: none;
-    padding: 20px;
-}
-
-.slide-out-menu a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 10px 0;
-}
-
-.menu-open {
-    left: 0;
-}
-
-/* Zentriert den Header-Text */
-header {
-    background-color: transparent;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Geändert zu 'center' */
-    width: calc(100% - 200px); /* Abzug der Breite der Sidebar */
-}
-
-/* Zentriert den Hauptinhaltstext */
-main {
-    flex: 1;
-    padding: 20px;
-    text-align: center; /* Hinzugefügt */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Hinzugefügt */
-
-/* ... Weitere CSS-Regeln ... */
-
+/* ... Weitere Stile ... */
