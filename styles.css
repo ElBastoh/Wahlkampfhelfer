@@ -1,55 +1,103 @@
-/* Globale Stile */
-body {
+/* Reset some default styles for consistency */
+body, h1, p {
     margin: 0;
     padding: 0;
+}
+
+/* Apply basic styling */
+body {
     font-family: Arial, sans-serif;
-    background-color: rgb(6, 171, 170);
-    color: white;
-    display: flex;
-    min-height: 100vh;
+    background-color: #f0f0f0;
 }
 
-/* Header-Stile */
 header {
-    background-color: transparent;
-    padding: 2% 5%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
     text-align: center;
+    position: relative;
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Accordion Styles */
+.faq-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.accordion-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
+.accordion-content {
+    display: none;
+    padding: 10px 20px;
 }
 
-.logo img {
-    max-height: 40px;
-    margin-right: 10px;
+.accordion-content p {
+    margin: 0;
 }
 
-/* Hauptinhalt-Stile */
-main {
-    flex: 1;
-    padding: 5%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.accordion-item.open .accordion-content {
+    display: block;
 }
 
-/* Footer-Stile */
-footer {
-    background-color: transparent;
-    padding: 2% 5%;
-    text-align: center;
+.accordion-icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
 }
 
-.footer-text {
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    margin-top: auto;
+.accordion-item.open .accordion-icon {
+    transform: rotate(-135deg);
 }
