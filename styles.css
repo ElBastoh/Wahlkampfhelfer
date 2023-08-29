@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: rgb(6, 171, 170); /* Neue Hintergrundfarbe */
+    background-color: rgb(6, 171, 170);
     color: white;
     display: flex;
     min-height: 100vh;
@@ -12,19 +12,19 @@ body {
 /* Header-Stile */
 header {
     background-color: transparent;
-    padding: 20px;
+    padding: 2% 5%; /* Verwendung von Prozent für den Abstand */
     text-align: center;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between; /* Änderung der Ausrichtung */
-    width: calc(100% - 200px); /* Abzug der Breite der Sidebar */
+    justify-content: space-between;
+    width: calc(100% - 20%); /* Verwendung von Prozent für die Breite */
 }
 
 .menu-toggle {
     background: none;
     border: none;
     color: white;
-    font-size: 20px;
+    font-size: 1.5rem; /* Verwendung von relativen Einheiten REM */
     cursor: pointer;
 }
 
@@ -32,8 +32,8 @@ header {
 .slide-out-menu {
     position: fixed;
     top: 0;
-    left: -200px;
-    width: 200px;
+    left: -80%; /* Verwendung von Prozent für die Position */
+    width: 80%; /* Verwendung von Prozent für die Breite */
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
@@ -49,13 +49,13 @@ header {
 }
 
 .slide-out-menu ul li {
-    margin-bottom: 20px;
+    margin-bottom: 5%; /* Verwendung von Prozent für den Abstand */
 }
 
 .slide-out-menu a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 5%;
     width: 100%;
     text-align: center;
 }
@@ -67,7 +67,7 @@ header {
 /* Hauptinhalt-Stile */
 main {
     flex: 1;
-    padding: 20px;
+    padding: 5%; /* Verwendung von Prozent für den Abstand */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -77,7 +77,7 @@ main {
 /* Footer-Stile */
 footer {
     background-color: transparent;
-    padding: 10px;
+    padding: 2% 5%; /* Verwendung von Prozent für den Abstand */
     text-align: center;
 }
 
@@ -91,7 +91,7 @@ footer {
 
 /* Akkordeon-Stile für FAQ */
 .faq-item {
-    margin-bottom: 20px;
+    margin-bottom: 5%; /* Verwendung von Prozent für den Abstand */
 }
 
 .question-btn {
@@ -105,7 +105,7 @@ footer {
 
 .answer {
     display: none;
-    margin-top: 10px;
+    margin-top: 2% /* Verwendung von Prozent für den Abstand */;
 }
 
 .show-answer {
