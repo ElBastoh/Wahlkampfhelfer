@@ -6,6 +6,7 @@ body {
     background-color: rgb(6, 171, 170);
     color: white;
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -17,6 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo {
@@ -26,7 +28,7 @@ header {
 
 .logo img {
     max-height: 40px;
-    margin-right: 10px; /* Platz zwischen Logo und Text */
+    margin-right: 10px;
 }
 
 .menu-toggle {
@@ -36,12 +38,13 @@ header {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 /* Slide-Out-Menü-Stile */
 .slide-out-menu {
     position: fixed;
     top: 0;
-    left: -100%; /* Verwendung von Prozent für die Position */
-    width: 250px; /* Verwendung von Prozent für die Breite */
+    left: -100%;
+    width: 250px;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
@@ -57,13 +60,13 @@ header {
 }
 
 .slide-out-menu ul li {
-    margin-bottom: 5%; /* Verwendung von Prozent für den Abstand */
+    margin-bottom: 10%;
 }
 
 .slide-out-menu a {
     color: white;
     text-decoration: none;
-    padding: 5%;
+    padding: 10%;
     width: 100%;
     text-align: center;
 }
@@ -75,17 +78,15 @@ header {
 /* Hauptinhalt-Stile */
 main {
     flex: 1;
-    padding: 5%; /* Verwendung von Prozent für den Abstand */
+    padding: 5%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 20px;
 }
 
 /* Footer-Stile */
 footer {
     background-color: transparent;
-    padding: 2% 5%; /* Verwendung von Prozent für den Abstand */
+    padding: 2% 5%;
     text-align: center;
 }
 
@@ -98,20 +99,18 @@ footer {
 }
 
 /* Akkordeon-Stile für FAQ */
-/* Akkordeon-Stile für FAQ */
 .faq-item {
     margin-bottom: 20px;
 }
 
 .question-btn {
-    background-color: rgb(0, 100, 100); /* Neue Hintergrundfarbe für Frage-Schaltflächen */
+    background-color: transparent;
     border: none;
     color: white;
     cursor: pointer;
     width: 100%;
     text-align: left;
     font-size: 18px;
-    padding: 10px; /* Leichtes Padding hinzugefügt */
 }
 
 .answer {
@@ -122,5 +121,4 @@ footer {
 .show-answer {
     display: block;
 }
-
 
