@@ -1,8 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const hamburgerMenu = document.querySelector(".hamburger-menu");
-    const mainMenu = document.querySelector(".main-menu");
+const menuIcon = document.getElementById("menu-icon");
+const mobileMenu = document.getElementById("mobile-menu");
 
-    hamburgerMenu.addEventListener("click", function() {
-        mainMenu.classList.toggle("menu-open");
+menuIcon.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+});
+
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+        const accordionItem = header.parentElement;
+        accordionItem.classList.toggle('open');
     });
 });
