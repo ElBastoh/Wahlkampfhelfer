@@ -7,11 +7,11 @@ body, h1, p {
 /* Apply basic styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #3B6E75;
+    background-color: #ffffff;
 }
 
 header {
-    background-color: #007bff;
+    background-color: #3B6E75;
     color: #fff;
     padding: 20px;
     text-align: center;
